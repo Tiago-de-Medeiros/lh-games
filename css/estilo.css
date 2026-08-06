@@ -75,3 +75,30 @@ footer p {
     padding: 50px;
     display: none;
 }
+
+
+/* Espaçamento e títulos das seções */
+main section h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}
+
+/* Efeito de zoom na Galeria ao passar o mouse */
+#section-galeria .card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#section-galeria .card:hover {
+  transform: scale(1.03);
+}
+
+/* Botão Flutuante Voltar ao Topo */
+#voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}

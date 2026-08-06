@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LH Games</title>
+  <title>TM Games</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -48,6 +48,7 @@
 
   <main>
 
+    <!-- BANNERS -->
     <section id="section-banners" class="container-fluid">
 
       <div id="carouselExampleControls" class="carousel slide" data-bs-slide="carousel">
@@ -73,12 +74,11 @@
       </div>
     </section>
     
-    <section id="section-vendidos" class="container-fluid">
+    <!-- PRODUTOS MAIS VENDIDOS -->
+    <section id="section-vendidos" class="container-fluid">    
+      <h2>OS MAIS VENDIDOS</h2>  
 
-      <h2>OS MAIS VENDIDOS</h2>
-      
-      <div class="card-group">
-        
+      <div class="card-group">        
         <div class="card" style="width: 18rem;">
           <img src="img/jogo1.PNG" class="card-img-top" alt="Jogo de aventura">
             <div class="card-body">
@@ -110,6 +110,98 @@
         </div>
       </div>           
     </section>
+
+    <!-- SEÇÃO NOVIDADES -->
+    <section id="section-novidades" class="container-fluid my-5">
+      <h2 class="mb-4">NOVIDADES GAMER</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/banner1.PNG" class="card-img-top" alt="Lançamentos de Jogos">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Lançamento</span>
+              <h5 class="card-title">Novo RPG de Ficção Científica</h5>
+              <p class="card-text">Confira o primeiro trailer oficial e as especificações recomendadas para jogar no Ultra.</p>
+            </div>            
+            <div class="card-footer">
+              <small class="text-muted">Publicado recentemente</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/banner2.PNG" class="card-img-top" alt="Campeonato eSports">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">eSports</span>
+              <h5 class="card-title">Torneio Nacional de FPS</h5>
+              <p class="card-text">Inscrições abertas para a competição deste final de semana com prêmios em dinheiro.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Inscrições abertas</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/banner3.PNG" class="card-img-top" alt="Hardware Novo">
+            <div class="card-body">
+              <span class="badge bg-info text-dark mb-2">Hardware</span>
+              <h5 class="card-title">Nova Geração de Placas de Vídeo</h5>
+              <p class="card-text">Análise completa do desempenho de Ray Tracing nos principais jogos da atualidade.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Análise da semana</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO GALERIA -->
+    <section id="section-galeria" class="container-fluid my-5">
+      <h2 class="mb-4">GALERIA DA COMUNIDADE</h2>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="card bg-dark text-white border-0 overflow-hidden">
+            <img src="img/jogo1.PNG" class="card-img img-fluid" alt="Setup Gamer">
+            <div class="card-img-overlay d-flex align-items-end p-2 bg-dark bg-opacity-50">
+              <p class="card-text fw-bold m-0">Setup Battlestation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card bg-dark text-white border-0 overflow-hidden">
+            <img src="img/jogo2.PNG" class="card-img img-fluid" alt="Captura de Tela de Jogo">
+            <div class="card-img-overlay d-flex align-items-end p-2 bg-dark bg-opacity-50">
+              <p class="card-text fw-bold m-0">Screenshot Cyberpunk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card bg-dark text-white border-0 overflow-hidden">
+            <img src="img/jogo3.PNG" class="card-img img-fluid" alt="Cantinho Gamer">
+            <div class="card-img-overlay d-flex align-items-end p-2 bg-dark bg-opacity-50">
+              <p class="card-text fw-bold m-0">Cantinho Minimalista</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card bg-dark text-white border-0 overflow-hidden">
+            <img src="img/banner1.PNG" class="card-img img-fluid" alt="Evento Cosplay">
+            <div class="card-img-overlay d-flex align-items-end p-2 bg-dark bg-opacity-50">
+              <p class="card-text fw-bold m-0">Evento Cosplay</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -118,6 +210,22 @@
 
   <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
 
+  <!-- Modal para Visualizar Imagem da Galeria -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border-secondary">
+        <div class="modal-header border-secondary">
+          <h1 class="modal-title fs-5" id="galleryModalLabel">Visualizar Imagem</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="" class="img-fluid d-block mx-auto modal-img-preview" alt="Imagem ampliada">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
